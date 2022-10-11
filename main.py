@@ -3,7 +3,6 @@ import aiohttp
 from json import loads
 
 from aiogram import Dispatcher, Bot, executor, types
-import config
 import aioschedule
 import asyncio
 
@@ -74,11 +73,13 @@ async def main() -> string:
 
 
 async def send_messages() -> None:
-    await bot.send_message(config.id, await main())
+    with open("config.txt", "r", encoding="utf-8") as f:
+        user_id = f.read().strip().split("\n")[-1].strip()
+        await bot.send_message(user_id, await main())
 
 
 async def create_aioschedule() -> None:
-    aioschedule.every(180).seconds.do(send_messages)
+    aioschedule.every(3).seconds.do(send_messages)
 
     while True:
         await aioschedule.run_pending()
@@ -93,7 +94,9 @@ async def create_tasks(message: types.Message):
 
 
 if __name__ == '__main__':
-    bot = Bot(token=config.token)
+    with open("config.txt", "r", encoding="utf-8") as f:
+        token = f.read().strip().split("\n")[0].strip()
+        bot = Bot(token=token)
     dp = Dispatcher(bot)
 
     executor.start_polling(dp, on_startup=create_tasks)
