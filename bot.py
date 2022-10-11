@@ -15,6 +15,7 @@ async def send_messages():
 async def create_aioschedule() -> None:
     aioschedule.every(180).seconds.do(send_messages)
     
+    
     while True:
         await aioschedule.run_pending()
         await asyncio.sleep(0.5)
