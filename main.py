@@ -79,7 +79,7 @@ async def send_messages() -> None:
 
 
 async def create_aioschedule() -> None:
-    aioschedule.every(3).seconds.do(send_messages)
+    aioschedule.every(180).seconds.do(send_messages)
 
     while True:
         await aioschedule.run_pending()
