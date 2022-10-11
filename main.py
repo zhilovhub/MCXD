@@ -46,13 +46,16 @@ def get_currency_garantex() -> float:
     with open("data.json", "w", encoding="utf-8") as f:
         dump(data, f, indent=4, ensure_ascii=False)
 
+    garantex_usd = float(data["tickers"]["usdtrub"]["sell"])
+    return garantex_usd
+
 
 def main() -> None:
     # koronapay_usd, koronapay_eur, koronapay_try = get_currency_koronapay()
     # print(koronapay_usd)
     # print(koronapay_eur)
     # print(koronapay_try)
-    get_currency_garantex()
+    print(get_currency_garantex())
 
 
 if __name__ == '__main__':
