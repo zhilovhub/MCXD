@@ -1,0 +1,1847 @@
+
+<!DOCTYPE html>
+<html class="ru" lang="ru">
+<head>
+    <!--w1-->
+    <title>
+	Индикативные курсы валют &mdash; Московская Биржа | Рынки
+</title><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NHLBNV7');</script>
+<!-- End Google Tag Manager -->
+<meta name="yandex-verification" content="56618e65ad1aec37" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="yandex-verification" content="673c9d708859738e" /><meta name="yandex-verification" content="86ae31544df457ff" /><meta name="google-site-verification" content="UzyoygMTAUWLFgbbUqyBicWL7AF2hFPyzV0yM2H2FLs" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/styles/carousel.css?v=20220913180128305" rel="stylesheet" type="text/css" /><link rel="icon" href="/assets-redesign-2021/images/favicon.svg?v=202112221300" type="image/x-icon" /><link rel="shortcut icon" href="/assets-redesign-2021/images/favicon.svg?v=202112221300" type="image/x-icon" /><link rel="mask-icon" href="/assets-redesign-2021/images/favicon-safari-pinned-tab.svg?v=202112221300" color="#ff0508" /><link href="/styles/component-new-menu.css?v=20220913180128305" rel="stylesheet" type="text/css" /><link href="/js/registrationSubscriptions/jquery.cart.css?v=20220913180126305" rel="stylesheet" type="text/css" /><link href="/styles/font-awesome.css?v=20220913180128305" rel="stylesheet" type="text/css" /><meta property="og:site_name" content="Московская Биржа" /><meta id="ctl00_metaMaterialType" property="materialType" content="Рынки" /><meta id="ctl00_OgTitle" property="og:title" content="Московская Биржа - Индикативные курсы валют" /><meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <![if IE]>
+        <script src="/js/babel-polyfill.bundle.min.js?v=20220913180126305" type="text/javascript"></script>
+    <![endif]>
+    <script src="/js/main-config.js?langId=1"></script>
+    <script src="/js/jquery-1.11.2.min.js?v=20220913180126305" type="text/javascript"></script><script src="/js/jquery-ui-1.10.3.min.js?v=20220913180126305" type="text/javascript"></script><script src="/js/lodash/4.17.4/lodash.min.js?v=20220913180126305" type="text/javascript"></script><script src="/js/kizzy.min.js?v=20220913180126305" type="text/javascript"></script><script src="/static-content/widgets/assets/mx.assets.min.js?v=20220913180128305" type="text/javascript"></script><script src="/static-content/widgets/assets/mx.auth.min.js?v=20220913180128305" type="text/javascript"></script>
+
+<style type="text/css">
+	.highcharts-root > text {
+		display: none;
+	}
+
+	select > *,
+	label > * {
+		pointer-events: none;
+	}
+</style>
+
+<script type="text/javascript" src="/bundles/moex-master?v=NSCQrlWWnYWUqKvL4bs5e29ngpFDTJ42_xC0bGIhj4M1"></script>
+
+<script type="text/javascript">
+	window.moex = window.moex || {};
+	var moex = window.moex;
+	var lang = "ru";
+
+	window.page = window.page || {};
+	window.page = {
+		lang: function () {
+			return 'ru';
+		},
+		ru: function (lang) {
+			if (lang) {
+				return lang.toString().trim().toLowerCase() === 'ru';
+			}
+
+			return true;
+		},
+		en: function (lang) {
+			if (lang) {
+				return lang.toString().trim().toLowerCase() === 'en';
+			}
+
+			return false;
+		}
+	};
+
+    window.mx.locale(lang);
+	if (window.mx && window.mx.I18n) {
+		window.mx.I18n.locale = lang;
+	}
+
+
+	// класс для локализации
+	moex.localizer = {
+		langName: 'ru',
+		lang: 'ru',
+		langId: 1,
+		translateEnRu: function (en, ru) {
+			if (this.langId === 2) {
+				return en;
+			}
+			return ru;
+		},
+		translateRuEn: function (ru, en) {
+			return this.translate(en, ru);
+		},
+		translate: function (en, ru) {
+			if (Array.isArray(en)) {
+				return this.translateEnRu(en[0], en[1]);
+			};
+
+			if (moex.helper.isString(en)) {
+				return this.translateEnRu(en, ru);
+			}
+			else if (en) {
+				return this.translateLCC(en);
+			}
+			return en;
+		},
+		translateLCC: function (languageContentCollection) {
+			if (languageContentCollection && languageContentCollection[moex.localizer.lang]) {
+				return languageContentCollection[moex.localizer.lang].Content;
+			}
+			return languageContentCollection;
+		}
+	};
+
+	window.moex = window.moex || {};
+	window.moex.web = window.moex.web || {};
+	window.moex.web.api = window.moex.web.api || {};
+	window.moex.web.api.microcms = window.moex.web.api.microcms || {};
+	window.moex.web.api.microcms.baseUrl = '/api/stat/microcms';
+
+	window.moex.web.api.secms = window.moex.web.api.secms || {};
+	window.moex.web.api.secms.baseUrl = window.moex.web.api.microcms.baseUrl;
+	
+
+	window.moex.web.api.stat = window.moex.web.api.stat || {};
+	window.moex.web.api.stat.outlook = window.moex.web.api.stat.outlook || {};
+	window.moex.web.api.stat.outlook.baseUrl = '/api/stat/outlook';
+
+	window.moex.informer = window.moex.informer || {};
+	window.moex.informer.baseUrl = 'https://informer.moex.com';
+	window.moex.debug = window.moex.debug || {};
+	window.moex.debug.log = function (data) {
+		
+	};
+
+	moex.indices = moex.indices || {};
+    moex.indices._aliases = {
+	"MICEX10INDEX": "MOEX10",
+	"RTSSTD": "MOEXBC",
+	"MICEXBMI": "MOEXBMI",
+	"MICEXCHM": "MOEXCH",
+	"MICEXCGS": "MOEXCN",
+	"MICEXPWR": "MOEXEU",
+	"MICEXFNL": "MOEXFN",
+	"MICEXINNOV": "MOEXINN",
+	"MICEXM&M": "MOEXMM",
+	"MICEXO&G": "MOEXOG",
+	"MICEXTLC": "MOEXTL",
+	"MICEXTRN": "MOEXTN",
+	"MICEXCBITR": "RUCBITR",
+	"MICEXCBICP": "RUCBICP",
+	"MICEXMBITR": "RUMBITR",
+	"MICEXMBICP": "RUMBICP",
+	"MICEXCBITR5Y": "RUCBTR5Y",
+	"MICEXCBICP5Y": "RUCBCP5Y",
+	"MICEXCBITR3Y": "RUCBTR3Y",
+	"MICEXCBICP3Y": "RUCBCP3Y"
+};
+
+    window.moex.fs = window.moex.fs || {};
+    window.moex.fs.baseUrl = 'https://fs.moex.com';
+
+    window.moex.features = JSON.parse('{"test":{"Enabled":false},"optionsonactions":{"Enabled":true},"drtest":{"Enabled":false},"redesign2022_header":{"Enabled":true},"redesign2022_footer":{"Enabled":true},"redesign2022_leftmenu":{"Enabled":true},"labeling_financial_instruments":{"Enabled":false},"futoi":{"Enabled":false},"ie11alert":{"Enabled":false}}'); /* WEBMOEX-3827 */
+
+	window.moex.school = window.moex.school || {};
+    window.moex.school.baseUrl = 'https://school.moex.com';
+</script>
+
+<script rel="script" src="/js/Highstock-6.1.2/code/highstock.js" type="text/javascript"></script><script rel="script" src="/mxassets/mx.cs/highstock_locale.js" type="text/javascript"></script><script src="/js/jquery.tabs.js?v=20220913180126305" type="text/javascript"></script><script src="/js/jquery.corner.js?v=20220913180126305" type="text/javascript"></script><script src="/js/jquery.cookie.js?v=20220913180126305" type="text/javascript"></script><script src="/js/common.js?v=20220913180126305" type="text/javascript"></script><script src="/js/tools/cookie.js?v=20220913180126305" type="text/javascript"></script><script src="/js/main-ru.js?v=20220913180126305" type="text/javascript"></script><script src="/js/modernizr.custom.js?v=20220913180126305" type="text/javascript"></script><script src="/js/jquery.dropdown.js?v=20220913180126305" type="text/javascript"></script>
+	<meta name="System.UX" content="0,063" />
+<link rel='stylesheet' href='/static-content/widgets/assets/mx.auth.css' type='text/css' /><link rel="yandex-tableau-widget" href="/manifestmb.json" />
+
+    <!--[if lt IE 9]>
+        <script src="/moex/dist/js/html5shiv.js?v=20220913180126305" type="text/javascript"></script><script src="/moex/dist/js/respond.min.js?v=20220913180126305" type="text/javascript"></script><script src="js/css3-mediaqueries.js?v=20190611130200" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (gte IE 9) | (!IE)]><!-->
+        <script src="/moex/dist/js/library-future.js?v=20220913180126305" type="text/javascript"></script>
+    <!--<![endif]-->
+
+    <script src="/moex/dist/js/library.min.js?v=20220913180126305" type="text/javascript"></script><script src="/js/moment/moment.min.js?v=20220913180126305" type="text/javascript"></script><script src="/js/moment-timezone/moment-timezone-with-data-2012-2022.min.js?v=20220913180126305" type="text/javascript"></script><script src="/js/moment/locale/ru.js?v=20220913180126305" type="text/javascript"></script>
+        <script>moment.locale('ru');</script>
+    <script src="/moex/dist/js/cart/jquery.enhanced.cookie.js?v=20220913180126305" type="text/javascript"></script><script src="/moex/dist/js/main.js?v=20221006142546305" type="text/javascript"></script>
+    <!--[if (gte IE 9) | (!IE)]><!-->
+        <script src="/moex/dist/js/main-future.js?v=20220913180126305" type="text/javascript"></script>
+    <!--<![endif]-->
+    <link href="/moex/dist/css/vendor.css?v=20220913180126305" rel="stylesheet" type="text/css" /><link href="/moex/dist/css/main.css?v=20221011092634305" rel="stylesheet" type="text/css" /><link href="/moex/dist/css/promo.css?v=20221003133948305" rel="stylesheet" type="text/css" /><link href="/moex/dist/css/widget/widget.css?v=20220913180126305" rel="stylesheet" type="text/css" /><link href="/moex/dist/css/StyleSheet.css?v=20220913180126305" rel="stylesheet" type="text/css" /><link href="/styles/Redesign.css?v=20220913180128305" rel="stylesheet" type="text/css" /><link href="/styles/redesign-all.css?v=20220913180128305" rel="stylesheet" type="text/css" /><link href="/styles/redesign-market.css?v=20220913180128305" rel="stylesheet" type="text/css" /><script src="/mxassets/mx.locale.js?v=20220913180126305" type="text/javascript"></script><script src="/mxassets/mx.i18n.js?v=20220913180126305" type="text/javascript"></script>
+
+    <!-- redesign 2021: -->
+    <link href="/assets-redesign-2021/dist/styles.css?v=20221003133948305" rel="stylesheet" type="text/css" />
+    <!-- /redesign 2021 -->
+
+    <script src="/js/svg4everybody.min.js?v=20221005125352305" type="text/javascript"></script>
+    <script>svg4everybody();</script>
+
+    
+    <link href="/moex-redesign/styles/bootstrap.min.css?v=20220930093410305" rel="stylesheet" type="text/css" /><link href="/moex-redesign/styles/styles.css?v=20221011115236305" rel="stylesheet" type="text/css" /><link href="/moex-redesign/fonts/fonts.css?v=20220930093410305" rel="stylesheet" type="text/css" /><meta name="format-detection" content="telephone=no" />
+
+    <script>
+        window.mx.locale(window.page.lang());
+
+        if (window.mx.I18n) {
+            window.mx.I18n.locale = window.page.lang();;
+        }
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script>
+        (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(13220716, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, trackHash: true });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/13220716" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body id="redesign-2021">
+    <div class="alert alert-warning ie11-alert" role="alert">
+        <span></span>
+        <img src="/images/cross.png" onclick="hideIE11Alert()">
+    </div>
+    <style>
+        .ie11-alert {
+            text-align: center;
+            position: relative;
+            display: none;
+        }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .ie11-alert {
+                display: block;
+            }
+        }
+        .ie11-alert img {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+    <script>
+    addEventListener('DOMContentLoaded', function(){
+        var flag = localStorage.getItem('isIE11AlertSeen');
+        if(!flag && window.moex.features.ie11alert && window.moex.features.ie11alert.Enabled) {
+            document.querySelector('.ie11-alert span').innerText = lang === 'ru' ? 'Внимание! С 1 декабря IE более не поддерживается' : 'Please note that from 1 December, IE will be no longer supported'
+        } else {
+            var child = document.querySelector('.ie11-alert');
+            child.parentNode.removeChild(child);
+        }
+    });
+    function hideIE11Alert() {
+        localStorage.setItem('isIE11AlertSeen', true);
+        var child = document.querySelector('.ie11-alert');
+        child.parentNode.removeChild(child);
+    }
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHLBNV7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    
+
+    
+
+    <!-- En-disclaimer -->
+    <div id="disclaimer-modal" tabindex="-1" role="dialog" class="modal _disclaimer gf-en"></div>
+    <!-- /En-disclaimer -->
+    <div class="page">
+        <div class="page__old-browser-alert">
+            <div class="old-browser-alert">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+
+<div class="moex-design">
+    <svg class="print-logo">
+        <use xlink:href="/assets/icons.svg#moex-logo-ru"></use>
+    </svg>
+    <header>
+        <div id="shadow" onclick="hideToggledElements()"></div>
+        <div id="shadow-top" onclick="hideToggledTopElements()"></div>
+        <div class="container">
+            <div class="header-nav row dash">
+                <div class="header-nav__menu-button">
+                    <div class="header-nav__small-logo">
+                        <a href="\">
+                            <svg>
+                                <use href="/assets/icons.svg#moex-logo-small-ru"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="directions-button" onclick="toggleDirectionMenu()">
+                        <svg class="icon hoverable">
+                            <use href="/assets/icons.svg#menu"></use>
+                        </svg>
+                        <svg class="stroke-icon d-none">
+                            <use href="/assets/icons.svg#cross"></use>
+                        </svg><span>Направления</span>
+                    </div>
+                </div>
+                <div class="header-nav__search">
+                    <script src="/moex-redesign/js/search.prod.js?v=20221010105828305" type="text/javascript"></script>
+
+<label for="moex-search-input">
+    <svg class="stroke-icon hoverable">
+        <use href="/assets/icons.svg#search"></use>
+    </svg>
+</label>
+<input autocomplete="off" type="text" placeholder="Поиск" name="searchString" id="moex-search-input" />
+<div class="close-icon">
+    <svg class="search-icon hoverable" style="display:none">
+        <use href="/assets/icons.svg#search-cross"></use>
+    </svg>
+</div>
+
+                </div>
+                <div class="header-nav__date"></div>
+                <div class="header-nav__cabinet d-flex">
+                    <div class="cabinet__not-auth d-none">
+                        <svg class="icon hoverable d-none js-toggle-element" onclick="showAuthWindow()">
+                            <use href="/assets/icons.svg#cabinet"></use>
+                        </svg>
+                        <div class="cabinet-text-container">
+                            <span class="cabinet-text"><a class="js-login-link">Вход</a></span>
+                            <span class="cabinet-text"><a class="js-registration-link">Регистрация</a></span>
+                        </div>
+                        <a class="cart js-cart-handler">
+                            <span class="cart__counter">0</span>
+                            <svg class="icon hoverable">
+                                <use href="/assets/icons.svg#cart"></use>
+                            </svg>
+                        </a>
+                        <div class="cabinet__auth-window" style="display: none">
+                            <span class="cabinet-window-text"><a class="js-login-link">Вход</a></span>
+                            <span class="cabinet-window-text"><a class="js-registration-link">Регистрация</a></span>
+                        </div>
+                    </div>
+                    <div class="cabinet__auth d-flex">
+                        <div class="cabinet-button js-toggle-element" onclick="showCabinetWindow()">
+                            <svg class="icon">
+                                <use href="/assets/icons.svg#cabinet"></use>
+                            </svg>
+                            <span class="cabinet-text js-username-text"></span>
+                        </div>
+                        <a class="cart js-cart-handler">
+                            <span class="cart__counter">0</span>
+                            <svg class="icon hoverable">
+                                <use href="/assets/icons.svg#cart"></use>
+                            </svg>
+                        </a>
+                        <div class="cabinet__window cabinet__window_desktop" style="display: none">
+                            <div class="cabinet__name-block" onclick="closeCabinetWindow()">
+                                <svg class="icon">
+                                    <use href="/assets/icons.svg#cabinet"></use>
+                                </svg>
+                                <span class="cabinet-window-text js-username-text"></span>
+                            </div>
+                            <span class="divider"></span>
+                            <span class="cabinet-window-text"><a class="js-cabinet-link">Личный кабинет</a></span>
+                            <span class="cabinet-window-text"><a class="js-orders-link">Управление платными услугами</a></span>
+                            <span class="cabinet-window-text"><a class="js-settings-link">Настройки</a></span>
+                            <span class="divider"></span>
+                            <div class="cabinet-logout">
+                                <svg class="icon hoverable">
+                                    <use href="/assets/icons.svg#logout"></use>
+                                </svg>
+                                <span class="cabinet-window-text cabinet-text_logout"><a class="js-logout-link">Выход из системы</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav__lang">
+                    <div class="mobile-direction">
+                        <svg class="icon hoverable" onclick="showDirectionMenu()">
+                            <use href="/assets/icons.svg#menu"></use>
+                        </svg>
+                    </div>
+                    <span><a class="active" href="/">Ru</a></span>
+                    <span>&nbsp;/&nbsp;</span>
+                    <span><a  href="/en">En</a></span>
+                </div>
+                <div class="header-nav__mobile-menu-button" onclick="showBurgerMenu({isMobile: true})">
+                    <svg class="stroke-icon hoverable">
+                        <use href="/assets/icons.svg#menu-line"></use>
+                    </svg>
+                    <svg class="stroke-icon hoverable d-none">
+                        <use href="/assets/icons.svg#cross"></use>
+                    </svg>
+                </div>
+                <div class="header-nav__mobile-menu-button-xs" onclick="showMobileBurgerMenu()">
+                    <svg class="stroke-icon hoverable header-nav__mobile-menu-button-xs">
+                        <use href="/assets/icons.svg#menu-line"></use>
+                    </svg>
+                    <svg class="stroke-icon hoverable d-none">
+                        <use href="/assets/icons.svg#cross"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-line justify-content-center"></div>
+            <div class="header-burger__mobile header-burger" style="display: none">
+                <div class="header-nav__cabinet cabinet_mobile">
+                    <div class="cabinet__not-auth d-flex justify-content-start d-none">
+                        <svg class="icon">
+                            <use href="/assets/icons.svg#cabinet-user"></use>
+                        </svg>
+                        <span class="cabinet-mobile-text"><a class="js-login-link">Вход</a></span>
+                        <span class="cabinet-mobile-text">&nbsp;/&nbsp;</span>
+                        <span class="cabinet-mobile-text"><a class="js-registration-link">Регистрация</a></span>
+                    </div>
+                    <div class="cabinet__auth d-flex">
+                        <div class="cabinet-button js-toggle-element" onclick="showMobileCabinetWindow()">
+                            <svg class="icon">
+                                <use href="/assets/icons.svg#cabinet-user"></use>
+                            </svg><span class="cabinet-window-text js-username-text"></span>
+                        </div>
+                        <div class="cabinet__window cabinet__window_mobile" style="display: none">
+                            <div class="cabinet__name-block" onclick="closeCabinetWindow()">
+                                <svg class="icon">
+                                    <use href="/assets/icons.svg#cabinet-user"></use>
+                                </svg><span class="cabinet-window-text js-username-text"></span>
+                            </div>
+                            <span class="divider"></span>
+                            <span class="cabinet-window-text"><a class="js-cabinet-link">Личный кабинет</a></span>
+                            <span class="cabinet-window-text"><a class="js-orders-link">Управление платными услугами</a></span>
+                            <span class="cabinet-window-text"><a class="js-settings-link">Настройки</a></span>
+                            <span class="divider"></span>
+                            <div class="cabinet-logout">
+                                <svg class="icon">
+                                    <use href="/assets/icons.svg#logout"></use>
+                                </svg>
+                                <span class="cabinet-window-text cabinet-text_logout"><a class="js-logout-link">Выход из системы</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header row">
+                <div class="scroll-button scroll-button_left invisible" onclick="scrollMenuLeft()">
+                    <svg>
+                        <use xlink:href="/assets/icons.svg#menu-arrow"></use>
+                    </svg>
+                </div>
+                <div class="header__logo col-md-12 header__logo">
+                    <a href="\">
+                        <svg>
+                            <use href="/assets/icons.svg#moex-logo-ru"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-32 header__menu">
+                    <div class="header__menu-wrapper">
+                        <ul>
+    <li class="tablink" onclick="openTab(event,'moex-products')">Продукты и услуги</li>
+    <li class="tablink" onclick="openTab(event,'moex-info')">Биржевая информация</li>
+    <li class="tablink" onclick="openTab(event,'moex-documents')">Документы</li>
+    <li class="tablink" onclick="openTab(event,'moex-education')">Обучение</li>
+    <li class="tablink" onclick="openTab(event,'moex-media')">Медиа</li>
+    <li class="tablink" onclick="openTab(event,'moex-about')">О компании</li>
+</ul>
+                    </div>
+                </div>
+                <div class="scroll-button scroll-button_right" onclick="scrollMenuRight()">
+                    <svg>
+                        <use xlink:href="/assets/icons.svg#menu-arrow"></use>
+                    </svg>
+                </div>
+                
+                <div class="col-md-4 header__button" onclick="showBurgerMenu()">
+                    <svg class="stroke-icon hoverable">
+                        <use href="/assets/icons.svg#menu-line"></use>
+                    </svg>
+                </div>
+                
+            </div>
+        </div>
+        <div class="header-burger header-burger__desktop">
+            <div class="row">
+                <div class="col-md-44"></div>
+                <div class="col-md-4 header-burger__button d-flex justify-content-end align-items-center" onclick="showBurgerMenu()">
+                    <svg class="stroke-icon hoverable">
+                        <use href="/assets/icons.svg#cross"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="custom-container">
+                <div class="row d-flex">
+                    <div class="col-md-16 header-burger__left">
+    <ul>
+        <li class="active" onclick="openBurgerList(event,'moex-burger_markets')">Рынки</li>
+        <li onclick="openBurgerList(event,'moex-burger_indexes')">Индексы</li>
+        <li onclick="openBurgerList(event,'moex-burger_info')">Биржевая информация</li>
+        <li onclick="openBurgerList(event,'moex-burger_listings')">Листинг</li>
+        <li onclick="openBurgerList(event,'moex-burger_risks')">Управление рисками</li>
+        <li onclick="openBurgerList(event,'moex-burger_solutions')">Технологические решения</li>
+        <li><a href="/ru/map.aspx">Карта сайта</a></li>
+    </ul>
+</div>
+<div class="col-md-16 header-burger__right">
+    <div class="header-burger-tabcontent" id="moex-burger_markets">
+        <ul>
+            <li><a href="/s1160">Фондовый рынок</a></li>
+            <li><a href="/ru/derivatives/">Срочный рынок</a></li>
+            <li><a href="/ru/markets/currency/">Валютный рынок</a></li>
+            <li><a href="/ru/markets/money/">Денежный рынок</a></li>
+            <li><a href="/PreciousMetals">Товарный рынок</a></li>
+            <li><a href="/s850">Рынок стандартизированных ПФИ</a></li>
+            <li><a href="/s25">Рынок инноваций и инвестиций</a></li>
+            <li><a href="/s3019">Сектор Устойчивого Развития</a></li>
+            <li><a href="/s2151">Сектор Роста</a></li>
+            <li><a href="/ru/markets/risksector/">Сектор компаний повышенного инвестиционного риска</a></li>
+            <li><a href="/s3420">Двусторонние сделки с ЦК</a></li>
+            <li><a href="/ru/tradingcalendar/">Торговый календарь</a></li>
+        </ul>
+    </div>
+    <div class="header-burger-tabcontent" id="moex-burger_indexes">
+        <ul>
+            <li><a href="/ru/indices">Значения индексов</a></li>
+            <li><a href="/ru/index/IMOEX">Индекс МосБиржи и Индекс РТС</a></li>
+            <li><a href="/ru/index/IMOEX/about/">Индексы акций</a></li>
+            <li><a href="/ru/index/RGBITR/about/">Индексы облигаций</a></li>
+            <li><a href="/ru/index/inav">Расчетная цена инвестиционного пая (iNAV)</a></li>
+            <li><a href="/ru/index/pension/">Составные индексы</a></li>
+            <li><a href="/s2530">Индикаторы денежного рынка</a></li>
+            <li><a href="/ru/fixing/">Валютные фиксинги</a></li>
+            <li><a href="/ru/markets/currency/swaps.aspx?code=SRATE_USD_1W&amp;tid=2560">Индикаторы свопов</a></li>
+            <li><a href="/ru/index/WHFOB">Товарные индексы</a></li>
+            <li><a href="/ru/index/MREDC">Индекс московской недвижимости ДомКлик</a></li>
+            <li><a href="/ru/index/RVI">Индекс волатильности</a></li>
+            <li><a href="/msn/to_management_companies_custom_indexes">Заказные индексы</a></li>
+            <li><a href="/ru/factsheet">Факты и Цифры</a></li>
+            <li><a href="/msn/indices_products_to_management_companies_trademarks">Продукты и услуги</a></li>
+            <li><a href="/fsn/ru-indices-methodology">Методики расчета</a></li>
+            <li><a href="/s2554">Управление и контроль</a></li>
+            <li><a href="/ru/news/?ncat=108">Новости</a></li>
+        </ul>
+    </div>
+    <div class="header-burger-tabcontent" id="moex-burger_info">
+        <ul>
+            <li><a href="/msn/altSystems">Получение данных</a></li>
+            <li><a href="/ru/datapolicy/">Порядок использования</a></li>
+            <li><a href="/ru/orders?endofday">Информационные продукты</a></li>
+            <li><a href="/ru/analyticalproducts?netflow1">Аналитические продукты</a></li>
+            <li><a href="/s1146">Тарифы и договоры</a></li>
+            <li><a href="/s1957">Маркировка финансовых инструментов</a></li>
+            <li><a href="/ru/data">Котировки</a></li>
+            <li><a href="/s157">Итоги торгов</a></li>
+            <li><a href="/s158">Внебиржевые сделки</a></li>
+            <li><a href="/s124">Для мобильных устройств</a></li>
+        </ul>
+    </div>
+    <div class="header-burger-tabcontent" id="moex-burger_listings">
+        <ul>
+            <li><a href="/s1484">Эмитентам</a></li>
+            <li><a href="/ru/listing/securities.aspx">Список ценных бумаг</a></li>
+            <li><a href="/s19">Листинг ценных бумаг</a></li>
+            <li><a href="/s3020">Секторы ценных бумаг</a></li>
+            <li><a href="/s26">Количественные показатели</a></li>
+            <li><a href="/s28">Информация о дефолтах</a></li>
+            <li><a href="/s21">Тарифы</a></li>
+            <li><a href="/s22">Документы</a></li>
+            <li><a href="/s27">Отчетность эмитентов</a></li>
+            <li><a href="/s23">Инфраструктура</a></li>
+            <li><a href="/ru/news/?ncat=104">Новости</a></li>
+            <li><a href="/ru/events/?market=issuers">Мероприятия</a></li>
+        </ul>
+    </div>
+    <div class="header-burger-tabcontent" id="moex-burger_risks">
+        <ul>
+            <li><a href="/s1542">Требования к участникам клиринга</a></li>
+            <li><a href="/s1953">Обеспечение под стресс</a></li>
+            <li><a href="/s2089">Гарантийные фонды</a></li>
+            <li><a href="/s1543">Риск-менеджмент на фондовом и денежном рынке</a></li>
+            <li><a href="/s1544">Риск-менеджмент на валютном рынке и рынке драгоценных металлов</a></li>
+            <li><a href="/s1545">Риск-менеджмент на срочном рынке</a></li>
+            <li><a href="/s1546">Риск-менеджмент на рынке стандартизированных ПФИ</a></li>
+            <li><a href="/s1978">Риск-менеджмент на Товарном рынке</a></li>
+            <li><a href="/ru/news/?ncat=122">Новости</a></li>
+            <li><a href="/s1548">Законодательная и регуляторная база</a></li>
+        </ul>
+    </div>
+    <div class="header-burger-tabcontent" id="moex-burger_solutions">
+        <ul>
+            <li><a href="/s63">Библиотека</a></li>
+            <li><a href="/s154">Подключение к Бирже</a></li>
+            <li><a href="/s397">Продукты и сервисы</a></li>
+            <li><a href="/s324">Тарифы</a></li>
+            <li><a href="/a1819">Формы документов</a></li>
+            <li><a href="/s3018">Программа ответственного раскрытия информации о найденных уязвимостях</a></li>
+            <li><a href="/msn/technical-calendar">Календарь релизов и технологических изменений</a></li>
+            <li><a href="/ru/news/?ncat=107">Новости</a></li>
+        </ul>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav__menu-container directions">
+            <div class="header-nav__menu directions container">
+                <div class="row">
+    <a class="header__card col-md-16" href="https://www.nsd.ru/" target="_blank">
+        <div>
+            <span class="header__card-title">Национальный расчетный депозитарий</span>
+            <div class="header__card-description">Услуги центрального депозитария, расчетного банка и торгового репозитария</div>
+        </div>
+        <div class="header__card-footer"><svg class="icon hoverable"><use href="/assets/icons.svg#arrow-up-right"></use></svg></div>
+    </a>
+    <a class="header__card col-md-16" href="https://www.nationalclearingcentre.ru/" target="_blank">
+        <div>
+            <span class="header__card-title">Национальный Клиринговый Центр</span>
+            <div class="header__card-description">Услуги центрального контрагента и клиринговой организации</div>
+        </div>
+        <div class="header__card-footer"><svg class="icon hoverable"><use href="/assets/icons.svg#arrow-up-right"></use></svg></div>
+    </a>
+    <a class="header__card col-md-16" href="https://www.namex.org/" target="_blank">
+        <div>
+            <span class="header__card-title">Национальная Товарная Биржа</span>
+            <div class="header__card-description">Организация биржевого товарного рынка в России</div>
+        </div>
+        <div class="header__card-footer"><svg class="icon hoverable"><use href="/assets/icons.svg#arrow-up-right"></use></svg></div>
+    </a>
+    <a class="header__card col-md-16" href="https://www.moex.com/corp/" target="_blank">
+        <div>
+            <span class="header__card-title">Биржа для бизнеса</span>
+            <div class="header__card-description">Биржевые инструменты и сервисы, которые помогут вашему бизнесу расти</div>
+        </div>
+        <div class="header__card-footer"><svg class="icon hoverable"><use href="/assets/icons.svg#arrow-up-right"></use></svg></div>
+    </a>
+    <a class="header__card col-md-16" href="https://finuslugi.ru/" target="_blank">
+        <div>
+            <span class="header__card-title">Финуслуги</span>
+            <div class="header__card-description">Финуслуги - маркетплейс финансовых услуг от Мосбиржи, платформа №1 в реестре ЦБ РФ</div>
+        </div>
+        <div class="header__card-footer"><svg class="icon hoverable"><use href="/assets/icons.svg#arrow-up-right"></use></svg></div>
+    </a>
+</div>
+            </div>
+        </div>
+        <div class="header-nav__menu-container search" id="search-output">
+            <div class="header-nav__menu search-results custom-container">
+                
+
+<div class="search-results__loader__container" style="display:none">
+    <div id="lottie"></div>
+</div>
+<div class="search-results__results-block" style="display:none">
+        <div class="d-flex">
+            <div class="search-results__left">
+                <ul class="results-block__results-list">
+                    <li class="results-list__list-item">
+                        <div class="title-block col-md-12">
+                            <p><span class="title" id="nanoIssues">Инструменты</span><span class="count"></span></p>
+                        </div>
+                    </li>
+                    <li class="results-list__list-item">
+                        <div class="title-block col-md-12">
+                            <p><span class="title" id="nanoNews">Новости</span><span class="count"></span></p>
+                        </div>
+
+                    </li>
+                    <li class="results-list__list-item">
+                        <div class="title-block col-md-12">
+                            <p><span class="title" id="nanoMaterials">Материалы</span><span class="count"></span></p>
+                        </div>
+                    </li>
+
+                    <li class="results-list__list-item">
+                        <div class="title-block col-md-12">
+                            <p><span class="title" id="nanoDocuments">Документы</span><span class="count"></span></p>
+                        </div>
+                    </li>
+
+                    <li class="results-list__list-item">
+                        <div class="title-block col-md-12">
+                            <p><span class="title" id="nanoEvents">Мероприятия</span><span class="count"></span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-results__right  nano-content">
+                <div class="row">
+                    <div class="col-md-44"></div>
+                    <div class="col-md-4 search-results__button d-flex justify-content-end align-items-center" onclick="hideToggledElements()" style="display: block !important;">
+                        <svg class="stroke-icon hoverable">
+                            <use href="/assets/icons.svg#cross"></use>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="results-block__results-list">
+                    <li class="results-list__list-item">
+                        <div class="description-block col-md-24">
+                            <ul class="instruments-list" id="search-results__issues" data-search-link-category-name="Инструменты" >
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="results-list__list-item">
+                        <div class="description-block col-md-24">
+                            <ul class="search-titles-list" id="search-results__news"  data-search-page-category="isnews" data-search-link-category-name="Новостям">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="results-list__list-item">
+                        <div class="description-block col-md-24">
+                            <ul class="search-titles-list" id="search-results__materials" data-search-page-category="ismaterials" data-search-link-category-name="Материалам">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="results-list__list-item">
+                        <div class="description-block col-md-24">
+                            <ul class="search-titles-list" id="search-results__documents" data-search-page-category="isdocuments" data-search-link-category-name="Документам">
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="results-list__list-item">
+                        <div class="description-block col-md-24">
+                            <ul class="search-titles-list" id="search-results__events" data-search-page-category="isevents" data-search-link-category-name="Мероприятиям">
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+</div>
+<div class="search-results__no-results-block" style="display:none">
+    <div class="row d-flex">
+        <div id="search-results__message"></div>
+        <div class="col-md-4 search-results__button d-flex justify-content-start align-items-center" onclick="hideToggledElements()">
+            <svg class="stroke-icon hoverable">
+                <use href="/assets/icons.svg#cross"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<script src="/moex-redesign/js/loader/loader.js?v=20220930093410305" type="text/javascript"></script>
+
+            </div>
+        </div>
+        
+
+<div class="header-nav__menu-container shopping-cart shopping-cart--empty">
+    <div class="shopping-cart__mobile-header">
+        <a class="main-link" href="\">
+            <svg class="main-link__logo"><use href="/assets/icons.svg#moex-logo-small-ru"></use></svg>
+        </a>
+        <button class="shopping-cart__close--mobile" onclick="hideToggledElements()">
+            <svg class="stroke-icon hoverable"><use href="/assets/icons.svg#cross"></use></svg>
+        </button>
+    </div>
+    <div class="header-nav__menu container shopping-cart__container">
+        <div class="shopping-cart__header container">
+            <svg class="shopping-cart__icon">
+                <use href="/assets/icons.svg#cart"></use>
+            </svg>
+            <p id="shoppingCartTitle" class="shopping-cart__title">Корзина услуг</p>
+            <button class="shopping-cart__close" onclick="hideToggledElements()">
+                <svg class="stroke-icon hoverable"><use href="/assets/icons.svg#cross"></use></svg>
+            </button>
+        </div>
+        <div class="shopping-cart__wrapper">
+            <table class="table shopping-cart-table">
+                <tr>
+                    <th scope="coll" width="287">Информационный продукт</th>
+                    <th scope="coll">Инструмент</th>
+                    <th scope="coll" width="150">Период действия</th>
+                    <th class="text-right" scope="coll">Цена, ₽</th>
+                    <th class="shopping-cart-table__coll--no-border" scope="coll" width="54"></th>
+                </tr>
+            </table>
+            <ul class="shopping-cart-list"></ul>
+            <div class="shopping-cart__footer">
+                <p class="shopping-cart__order-price">
+                    <span class="shopping-cart__price-title">Сумма заказа:&nbsp;</span>
+                    <span id="priceAll">0</span>&nbsp;<span id="priceCurrencyType">₽</span>
+                </p>
+                <div class="shopping-cart__buttons">
+                    <button class="button" id="addNewService">Добавить услуги в корзину</button>
+                    <button id="makeOrderButton" class="button button--red" onclick="showDataConditions()">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dataConditionsModal" class="header-nav__menu-container shopping-cart-data-conditions">
+    <p class="shopping-cart-data-conditions__title">Условия предоставления данных</p>
+    <svg class="stroke-icon shopping-cart-data-conditions__cross" onclick="hideDataConditions()">
+        <use href="/assets/icons.svg#cross"></use>
+    </svg>
+    <div class="shopping-cart-data-conditions__body"></div>
+    <div class="shopping-cart-data-conditions__footer">
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="isAcceptOffert">
+            <span class="checkbox__mark"></span>
+            <span class="checkbox__title">Принимаю условия</span>
+        </label>
+        <button class="button button--red shopping-cart-data-conditions__button" id="nextOffertCart">Далее</button>
+    </div>
+</div>
+
+        <div class="header-menu-container">
+            <div class="custom-container">
+                <div class="header-menu tabcontent" id="moex-products">
+    <div class="row">
+        <div class="header-menu__left col-md-10">
+            <ul>
+                <li class="active left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-products__bidders')">Участникам торгов</li>
+                <li class="left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-products__emmitents')">Эмитентам</li>
+                <li class="left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-products__induviduals')">Частным лицам</li>
+                <li class="left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-products__investors')">Международным инвесторам</li>
+            </ul>
+        </div>
+        <div class="header-menu__right col-md-38">
+            <div class="left-menu-tabcontent" style="display: block" id="moex-products__bidders">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/a3116"><div class="header__card-title">Участие в торгах</div><div class="header__card-description">Общая информация о процессах участия в торгах</div></a>
+                    <a class="header__card col-md-16" href="/s8"><div class="header__card-title">Технологические решения</div><div class="header__card-description">Профессиональные решения для доступа к рынкам биржи и электронной торговли</div></a>
+                    <a class="header__card col-md-16" href="/a4089"><div class="header__card-title">Единый пул обеспечения</div><div class="header__card-description">Проект снижения издержек участников на проведение операций на рынках Группы Московская Биржа</div></a>
+                    <a class="header__card col-md-16" href="https://www.nsd.ru/services/depozitariy/" target="_blank"><div class="header__card-title">Депозитарное обслуживание</div><div class="header__card-description">Сервисы по обслуживанию ценных бумаг: хранение, учет прав, проведение расчетов с участием финансовых институтов</div></a>
+                    <a class="header__card col-md-16" href="https://www.nationalclearingcentre.ru/catalog/0201" target="_blank"><div class="header__card-title">Клиринговое обслуживание</div><div class="header__card-description">Оформление допуска к клиринговому обслуживанию</div></a>
+                    <a class="header__card col-md-16" href="/a7149"><div class="header__card-title">Единый счет</div><div class="header__card-description">Автоматизация переводов ценных бумаг и денежных средств между клиринговыми организациями НРД и НКЦ</div></a>
+                    <a class="header__card col-md-16" href="/msn/indices_products_to_management_companies_trademarks"><div class="header__card-title">Управляющим активами</div><div class="header__card-description">Создание и поддержка индексов</div></a>
+                    <a class="header__card col-md-16" href="/msn/altSystems"><div class="header__card-title">Биржевые данные</div><div class="header__card-description">Для альтернативных систем и производных цен</div></a>
+                    <a class="header__card col-md-16" href="/ru/orders?endofday"><div class="header__card-title">Информационные продукты</div><div class="header__card-description">Подписка на биржевую информацию</div></a>
+                    <a class="header__card col-md-16" href="/ru/analyticalproducts?netflow1"><div class="header__card-title">Аналитические продукты</div><div class="header__card-description">Информация о поведении участников торгов</div></a>
+                    <a class="header__card col-md-16" href="/s1957"><div class="header__card-title">Маркировка финансовых инструментов</div><div class="header__card-description">Автоматизация ограничения доступа к финансовым инструментам</div></a>
+                </div>
+            </div>
+            <div class="left-menu-tabcontent" id="moex-products__emmitents">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/msn/issuers"><div class="header__card-title">Листинг и доступ к рынкам капитала</div><div class="header__card-description">Все о привлечении капитала на публичном рынке: размещение акций, выпуск облигаций и правила листинга</div></a>
+                    <a class="header__card col-md-16" href="/s3228"><div class="header__card-title">IR-cервисы для эмитентов</div><div class="header__card-description">Московская биржа – ваш надежный партнёр на всех этапах публичности</div></a>
+                    <a class="header__card col-md-16" href="/s2311"><div class="header__card-title">Личный кабинет эмитента</div><div class="header__card-description">Электронное взаимодействие с биржей при выпуске ценных бумаг</div></a>
+                    <a class="header__card col-md-16" href="/s20"><div class="header__card-title">Поддержание ценных бумаг</div><div class="header__card-description">Мониторинг соответствия ценных бумаг правилам листинга</div></a>
+                    <a class="header__card col-md-16" href="/s26"><div class="header__card-title">Количественные показатели</div><div class="header__card-description">Капитализация, free-float и другие показатели </div></a>
+                    <a class="header__card col-md-16" href="/s23"><div class="header__card-title">Инфраструктура</div><div class="header__card-description">Все необходимое для попадания бумаг в котировальные списки</div></a>
+                    <a class="header__card col-md-16" href="/fsn/ru-listing-issuer-how-to-become-issuer"><div class="header__card-title">Как стать эмитентом облигаций</div><div class="header__card-description">Пошаговая инструкция по выпуску долговых бумаг</div></a>
+                    <a class="header__card col-md-16" href="/s3019"><div class="header__card-title">Сектор устойчивого развития</div><div class="header__card-description">Для облигаций с "зеленой" и "социальной" повесткой</div></a>
+                    <a class="header__card col-md-16" href="/s2151"><div class="header__card-title">Сектор роста</div><div class="header__card-description">Помощь малому и среднему бизнесу при выходе на рынки капитала</div></a>
+                </div>
+            </div>
+            <div class="left-menu-tabcontent" id="moex-products__induviduals">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/msn/investor-prod"><div class="header__card-title">Инвестиции</div><div class="header__card-description">Для знакомства с инструментам</div></a>
+                    <a class="header__card col-md-16" href="/ru/data/?tid=3028"><div class="header__card-title">Котировки</div><div class="header__card-description">Для отслеживания хода торгов</div></a>
+                    <a class="header__card col-md-16" href="https://school.moex.com/brokers" target="_blank"><div class="header__card-title">Брокеры</div><div class="header__card-description">Для инвестирования через наших партнеров</div></a>
+                    <a class="header__card col-md-16" href="/msn/learning"><div class="header__card-title">Обучение</div><div class="header__card-description">Полезные курсы от экспертов Школы Московской биржи</div></a>
+                    <a class="header__card col-md-16" href="https://finuslugi.ru/invest/kaliningrad" target="_blank"><div class="header__card-title">Облигации Калининградской области на Финуслугах</div><div class="header__card-description">Зарабатывайте на развитии региона РФ</div></a>
+                    <a class="header__card col-md-16" href="https://finuslugi.ru/vklady" target="_blank"><div class="header__card-title">Вклады на Финуслугах</div><div class="header__card-description">Выгодные предложения с максимальной ставкой по вкладам</div></a>
+                    <a class="header__card col-md-16" href="https://osago.finuslugi.ru/" target="_blank"><div class="header__card-title">ОСАГО на Финуслугах</div><div class="header__card-description">Выберите лучшие условия по электронному ОСАГО</div></a>
+                    <a class="header__card col-md-16" href="https://finuslugi.ru/potrebitelskie_kredity/" target="_blank"><div class="header__card-title">Кредиты на Финуслугах</div><div class="header__card-description">Поиск и оформление кредита онлайн</div></a>
+                </div>
+            </div>
+            <div class="left-menu-tabcontent" id="moex-products__investors">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/s8"><div class="header__card-title">Технологические решения</div><div class="header__card-description">Профессиональные решения для доступа к рынкам биржи и электронной торговли</div></a>
+                    <a class="header__card col-md-16" href="/s2155"><div class="header__card-title">Спонсируемый доступ</div><div class="header__card-description">Подключение к подсистеме обработки поручений</div></a>
+                    <a class="header__card col-md-16" href="/a6546"><div class="header__card-title">Клиринговое членство</div><div class="header__card-description">Разделение статусов участников клиринга и участников торгов</div></a>
+                    <a class="header__card col-md-16" href="/s1640"><div class="header__card-title">Сегрегированные счета</div><div class="header__card-description">Торговля с использованием сегрегированных счетов </div></a>
+                    <a class="header__card col-md-16" href="/ru/analyticalproducts?netflow1"><div class="header__card-title">Аналитические продукты</div><div class="header__card-description">Информация о поведении участников торгов</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-menu tabcontent" id="moex-info">
+    <div class="row">
+        <div class="header-menu__left col-md-10 tablet-hidden"></div>
+        <div class="header-menu__right col-md-38">
+            <div class="row">
+                <a class="header__card col-md-16" href="/ru/indices"><div class="header__card-title">Индексы</div><div class="header__card-description">Значения индексов Московской биржи</div></a>
+                <a class="header__card col-md-16" href="/ru/marketdata/?g=9#/mode=groups&group=9&collection=177&boardgroup=13&data_type=current&category=main"><div class="header__card-title">Валюта</div><div class="header__card-description">Ход торгов на валютном рынке</div></a>
+                <a class="header__card col-md-16" href="/ru/marketdata/?g=4#/group=4&collection=3&boardgroup=57&data_type=current&mode=groups&sort=SHORTNAME&order=asc"><div class="header__card-title">Акции</div><div class="header__card-description">Ход торгов на рынке акций</div></a>
+                <a class="header__card col-md-16" href="/ru/marketdata/?g=10#/group=10&collection=227&boardgroup=45&data_type=current&mode=groups&sort=VALTODAY&order=desc"><div class="header__card-title">Фьючерсы</div><div class="header__card-description">Вся информация о фьючерсных контрактах</div></a>
+                <a class="header__card col-md-16" href="/ru/marketdata/?g=3#/group=3&collection=7&boardgroup=58&data_type=current&mode=groups&sort=VALTODAY&order=desc"><div class="header__card-title">Облигации</div><div class="header__card-description">Ход торгов облигациями</div></a>
+                <a class="header__card col-md-16" href="/s157"><div class="header__card-title">Итоги торгов</div><div class="header__card-description">По всем рынкам Московской биржи</div></a>
+                <a class="header__card col-md-16" href="/s158"><div class="header__card-title">Внебиржевые сделки</div><div class="header__card-description">Текущая информация и архив данных</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-menu tabcontent" id="moex-documents">
+    <div class="row">
+        <div class="header-menu__left col-md-10">
+            <ul>
+                <li class="active left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-documents__bidders')">Участникам торгов</li>
+                <li class="left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-documents__emmitents')">Эмитентам</li>
+                <li class="left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-documents__induviduals')">Частным лицам</li>
+                <li class="left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-documents__investors')">Международным инвесторам</li>
+            </ul>
+        </div>
+        <div class="header-menu__right col-md-38">
+            <div class="left-menu-tabcontent" style="display:block" id="moex-documents__bidders">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/ru/members.aspx"><div class="header__card-title">Список участников торгов</div><div class="header__card-description">Общая информация об участниках торгов</div></a>
+                    <a class="header__card col-md-16" href="/a1819"><div class="header__card-title">Формы документов на подключение к ПТК</div><div class="header__card-description">Тестовый доступ к Фондовому рынку, Денежному рынку, рынку Депозитов с ЦК, Валютному рынку и рынку драгоценных металлов</div></a>
+                </div>
+            </div>
+            <div class="left-menu-tabcontent" id="moex-documents__emmitents">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/s19"><div class="header__card-title">Листинг ценных бумаг</div><div class="header__card-description">Общая информация о листинге ценных бумаг</div></a>
+                    <a class="header__card col-md-16" href="/s2242"><div class="header__card-title">Шаблоны сопроводительных документов</div><div class="header__card-description">Для выпуска биржевых облигаций</div></a>
+                    <a class="header__card col-md-16" href="/s22"><div class="header__card-title">Все документы</div><div class="header__card-description">Правила, тарифы и дополнительная информация о листинге</div></a>
+                </div>
+            </div>
+            <div class="left-menu-tabcontent" id="moex-documents__induviduals">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/s150"><div class="header__card-title">Квалифицированному инвестору</div><div class="header__card-description">Общая информация</div></a>
+                </div>
+            </div>
+            <div class="left-menu-tabcontent" id="moex-documents__investors">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/s1354"><div class="header__card-title">Годовые отчеты</div><div class="header__card-description">Годовые отчеты с 2011 года</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-menu tabcontent" id="moex-education">
+    <div class="row">
+        <div class="header-menu__left col-md-10">
+            <ul>
+                <li class="active left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-education__emmitents')">Эмитентам</li>
+                <li class="left-menu-tablink" onclick="openLeftMenuTab(event, 'moex-education__induviduals')">Частным лицам</li>
+            </ul>
+        </div>
+        <div class="header-menu__right col-md-38">
+            <div class="left-menu-tabcontent" style="display:block" id="moex-education__emmitents">
+                <div class="row">
+                    <a class="header__card col-md-16" href="/a7581"><div class="header__card-title">Календарь конференций</div><div class="header__card-description">Конференции, доступные российским и международным компаниям</div></a>
+                    <a class="header__card col-md-16" href="/ru/events/?market=issuers"><div class="header__card-title">Мероприятия и семинары</div><div class="header__card-description">Предстоящие события и отчеты о прошедших</div></a>
+                </div>
+            </div>
+            <div class="left-menu-tabcontent" id="moex-education__induviduals">
+                <div class="row">
+                    <a class="header__card col-md-16" href="https://school.moex.com/" target="_blank"><div class="header__card-title">Школа Московской биржи</div><div class="header__card-description">Московская биржа рассказывает начинающим инвесторам, как инвестировать на бирже с умом и как грамотно использовать финансовые инструменты</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-menu tabcontent" id="moex-media">
+    <div class="row">
+        <div class="header-menu__left col-md-10 tablet-hidden"></div>
+        <div class="header-menu__right col-md-38 col-sm-48">
+            <div class="row">
+                <a class="header__card col-md-16" href="/ru/events/"><div class="header__card-title">Мероприятия</div><div class="header__card-description">Предстоящие события и отчеты о прошедших</div></a>
+                <a class="header__card col-md-16" href="/ru/news/"><div class="header__card-title">Новости</div><div class="header__card-description">Все новости Московской биржи</div></a>
+                <a class="header__card col-md-16" href="/msn/MOEX-Hometalks"><div class="header__card-title">MOEX Home Talks</div><div class="header__card-description">Серия онлайн-встреч с первыми лицами компаний и ключевыми экспертами</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-menu tabcontent" id="moex-about">
+    <div class="row">
+        <div class="header-menu__left col-md-10 tablet-hidden"></div>
+        <div class="header-menu__right col-md-38 col-sm-48">
+            <div class="row">
+                <a class="header__card col-md-16" href="/s10"><div class="header__card-title">О Московской бирже</div><div class="header__card-description">Общая информация</div></a>
+                <a class="header__card col-md-16" href="/ru/news"><div class="header__card-title">Пресс-центр</div><div class="header__card-description">Все новости группы компаний</div></a>
+                <a class="header__card col-md-16" href="/s31"><div class="header__card-title">Контактная информация</div><div class="header__card-description">Как связаться с нами</div></a>
+                <a class="header__card col-md-16" href="/s249"><div class="header__card-title">Реквизиты</div><div class="header__card-description">Реквизиты ПАО Московская Биржа</div></a>
+                <a class="header__card col-md-16" href="/ru/exchange/investors.aspx"><div class="header__card-title">Инвесторам и акционерам</div><div class="header__card-description">Новости, события и отчеты</div></a>
+                <a class="header__card col-md-16" href="/s3351"><div class="header__card-title">Комплаенс</div><div class="header__card-description">О наших стандартах</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<script src="/moex-redesign/js/main-auth.prod.js?v=20221005125352305" type="text/javascript"></script>
+<script src="/js/jquery.ba-outside-events.min.js?v=20220913180126305" type="text/javascript"></script>
+<script> authSet("ru", "http%3a%2f%2fwww.moex.com%2fru%2fderivatives%2fcurrency-rate.aspx%3fcurrency%3dUSD_RUB"); </script>
+
+<script src="/js/jquery.enhanced.cookie.js?v=20220913180126305" type="text/javascript"></script>
+<script src="/moex-redesign/js/registrationSubscriptions/jquery.cart.prod.js?v=20221011115236305" type="text/javascript"></script>
+
+<div class="js-subscribe-cart"></div>
+<script>
+    $(document).ready(function () {
+        $(".header-nav__menu-container.shopping-cart").cart({
+            domainName: "moex.com",
+            loginUrl: "https://passport.moex.com/login/?return_to=",
+            infoServiceRedirect: "https://cabinet.moex.com/infoservices/orderdetails",
+            langID: '1',
+            passportRegistrationUrl: "https://passport.moex.com/registration",
+            passportRecoveryUrl: "https://passport.moex.com/password/recovery",
+            orderRuServiceUrl: "/ru/orders",
+            orderEnServiceUrl: "/en/orders"
+        });
+
+        $.ajax({
+            url: '/api/v1/current-time',
+            success: function (response) {
+                var serverTime = moment(response.utc).utcOffset(response.serverUtcOffsetInMinutes);
+                $(".header-nav__date").html(serverTime.format('dddd, DD MMMM HH:mm'));
+            }
+        });
+    });
+</script>
+        
+
+        <div class="page__main">
+            <div class="main">
+                <div class="container">
+                    <div class="row blocks-list">
+                        
+                            <div class="col-lg-9 _layout blocks-list__item secondpage">
+                            <!-- leftMenu -->
+                               <div class="blocks-list _left-menu">
+                                   <div class='blocks-list__item hidden-lg embed-responsive embed-responsive-mobileBanner mobileBannerBigScreen'><iframe data-server='flowers.moex.com' src='https://flowers.moex.com/b/b.asp?palias=union-market-derivatives-tablet&id=189&deviceType=tablet' marginwidth='0' marginheight='0' width='100%' scrolling='no' frameborder='0'></iframe></div>
+                                   <div id="ctl00_frmLeftMenuWrap" class="blocks-list__item">
+                                       <div class="blocks-list">
+                                           <div class='left-menu moex-design'>
+                                        <div class='left-menu__header'>
+                                            <a href='/ru/derivatives/'>
+                                                Срочный рынок
+                                            </a>
+                                        </div>
+                                        <div class='left-menu__mobile-header' onclick='toggleMobileLeftMenu()'>
+                                            <svg class='stroke-icon closed'><use href='/assets/icons.svg#menu-line'></use></svg>
+                                            <svg class='stroke-icon open'><use href='/assets/icons.svg#cross'></use></svg>
+                                            <p>Срочный рынок</p>
+                                        </div>
+                                    <div class='left-menu__content'>
+                                            <div class='left-menu__dropdown '><div class='dropdown__title '><a href='/ru/derivatives/contracts.aspx?p=act'><svg class='open'><use href='/assets/icons.svg#red-line'></use></svg><svg class='closed'><use href='/assets/icons.svg#red-plus'></use></svg><span>Инструменты</span></a></div><ul class='dropdown__content'></ul></div>
+                                            <div class='left-menu__link '><a href='/msn/ru-derivatives-premarket-session'>Аукцион открытия</a></div>
+                                            <div class='left-menu__dropdown '><div class='dropdown__title '><a href='/s3016'><svg class='open'><use href='/assets/icons.svg#red-line'></use></svg><svg class='closed'><use href='/assets/icons.svg#red-plus'></use></svg><span>Технологические сервисы</span></a></div><ul class='dropdown__content'></ul></div>
+                                            <div class='left-menu__dropdown '><div class='dropdown__title '><a href='/s37'><svg class='open'><use href='/assets/icons.svg#red-line'></use></svg><svg class='closed'><use href='/assets/icons.svg#red-plus'></use></svg><span>Клиринг и расчеты</span></a></div><ul class='dropdown__content'></ul></div>
+                                            <div class='left-menu__link '><a href='/s1059'>Риск-менеджмент</a></div>
+                                            <div class='left-menu__link '><a href='/ru/derivatives/go.aspx?type=F'>Действующие значения гарантийного обеспечения</a></div>
+                                            <div class='left-menu__link '><a href='/s3067'>RFS на срочном рынке</a></div>
+                                            <div class='left-menu__link '><a href='/s93'>Тарифы</a></div>
+                                            <div class='left-menu__dropdown '><div class='dropdown__title '><a href='/ru/members.aspx?tid=35&sby=7'><svg class='open'><use href='/assets/icons.svg#red-line'></use></svg><svg class='closed'><use href='/assets/icons.svg#red-plus'></use></svg><span>Участники</span></a></div><ul class='dropdown__content'></ul></div>
+                                            <div class='left-menu__link '><a href='/s2996'>Провайдеры крупных объемов</a></div>
+                                            <div class='left-menu__link '><a href='/msn/ru-futoptmm'>Маркет-мейкинг</a></div>
+                                            <div class='left-menu__link '><a href='/s3222'>Ключевые информационные документы</a></div>
+                                            <div class='left-menu__dropdown left-menu__dropdown_open'><div class='dropdown__title  active'><a href='/ru/derivatives/currency-rate.aspx?currency=USD_RUB'><svg class='open'><use href='/assets/icons.svg#red-line'></use></svg><svg class='closed'><use href='/assets/icons.svg#red-plus'></use></svg><span>Индикативные курсы</span></a></div><ul class='dropdown__content'><li><a href='/msn/ru-instrument-rate'>Курсы переоценки залоговых инструментов</a></li></ul></div>
+                                            <div class='left-menu__link '><a href='/s39'>Документы</a></div>
+                                            <div class='left-menu__link '><a href='/s94'>Управляющим компаниям</a></div>
+                                            <div class='left-menu__link '><a href='/msn/ru-fo-calendar-2022?show=fo'>Торговый календарь</a></div>
+                                            <div class='left-menu__link '><a href='/s40'>Обучение</a></div>
+                                            <div class='left-menu__link '><a href='/s1960'>Инфографика</a></div>
+                                            <div class='left-menu__link '><a href='/ru/news/?ncat=112'>Новости</a></div>
+                                            <div class='left-menu__link '><a href='/a177'>Как подключиться</a></div></div></div>
+                                           
+                                       </div>
+                                   </div>
+                                   <div class="blocks-list__item visible-lg-block">
+                                       <div class="blocks-list__item"><table cellspacing =0 cellPadding=0 width='100%' border=0><tr><td align=center><iframe width='210' height='310' marginwidth='0' marginheight='0' scrolling='no' frameborder='0' data-server='flowers.moex.com'
+src='https://flowers.moex.com/b/b.asp?palias=union-market-derivatives&id=152'></iframe></td></tr></table></div>
+                                   </div>
+                               </div>
+                            <!-- /leftMenu -->
+                            </div>
+                        
+                        <div class="_layout blocks-list__item col-lg-39">
+                            <div class="blocks-list">
+                                <div class="blocks-list__item _content2">
+                                    <div class="">
+                                        
+                                            <div class="blocks-list__item">
+                                                <div class="row">
+                                                    <div class='col-sm-28'><ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><li><a href='/ru/'>Главная</a></li> <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href='/s4'><span itemprop="name">Рынки</span></a><meta itemprop="position" content="1" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href='/ru/derivatives/'><span itemprop="name">Срочный рынок</span></a><meta itemprop="position" content="2" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href='/ru/derivatives/currency-rate.aspx?currency=USD_RUB'><span itemprop="name">Индикативные курсы</span></a><meta itemprop="position" content="3" /></li></ol></div>
+                                                    
+                                                    <script>
+                                                        $(window).resize(function() {
+                                                            var $controls = $('.new-moex-page-controls');
+                                                            var isHidden = $controls.hasClass('is-hidden');
+
+                                                            if (window.innerWidth < 1030 && $controls.length > 0) {
+                                                                if (!isHidden) {
+                                                                    $controls.addClass('is-hidden');
+                                                                }
+                                                            } else {
+                                                                if (isHidden) {
+                                                                    $controls.removeClass('is-hidden');
+                                                                }
+                                                            }
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        <h1>Индикативные курсы валют</h1>
+                                        
+  <style>
+  .mlcr { margin-left: -8px; }
+  @-moz-document url-prefix() {
+      .buttonFF { margin: 1px 0px 0px 10px; }
+      .mlcr { margin-left: 8px; }
+      .margin-tcr-15 { margin-top: 15px; }
+  }
+  @media (max-width: 1025px) {
+      .mlcr { margin-left: 0px; }
+      @-moz-document url-prefix() {
+          .buttonFF { margin: 0px 0px 0px 0px; }
+          .mlcr { margin-left: 0px; }
+          .margin-tcr-15 { margin-top: 5px; }
+      }
+  }
+  #currency-rate-container {
+    font-size: 13px;
+  }
+  </style>
+  <script type="text/javascript">
+    function redirect(CurrencySelect) {
+      var base_str = "currency-rate.aspx?currency=";
+      var selected = CurrencySelect.options[CurrencySelect.selectedIndex].value;
+      window.location.href = base_str.concat(selected);
+    }
+
+    function fChPage(npge) {
+      var mf = document.forms.usdratesfm;
+      mf.pge.value = npge;
+      mf.submit();
+    }
+  </script>
+  <div id="currency-rate-container">
+   <form method='post' name='usdratesfm'>
+      <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-38 margin-tb-10">
+          <a id="ctl00_PageContent_linkCalculationMethod"><p><a href="https://fs.moex.com/files/535">Методика расчета индикативных валютных курсов</a></p>
+
+<p style="margin-bottom:20px;"><a href="https://fs.moex.com/files/18041">Приказ о времени определения курсов валют для расчета вариационной маржи</a></p>
+</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-7 margin-b-10">Выберите валюты:</div>
+        <div class="col-md-20 col-sm-24 col-xs-44" style="font-family: monospace;">
+          <select name="ctl00$PageContent$CurrencySelect" id="ctl00_PageContent_CurrencySelect" style="width: 100%;" onchange="return redirect(this)">
+	<option selected="selected" value="USD_RUB">USD/RUB - Доллар США к российскому рублю</option>
+	<option value="EUR_RUB">EUR/RUB - Евро к российскому рублю</option>
+	<option value="CAD_RUB">CAD/RUB - Канадский доллар к российскому рублю</option>
+	<option value="CHF_RUB">CHF/RUB - Швейцарский франк к российскому рублю</option>
+	<option value="GBP_RUB">GBP/RUB - Британский фунт к российскому рублю</option>
+	<option value="JPY_RUB">JPY/RUB - Японская йена к российскому рублю</option>
+	<option value="CNY_RUB">CNY/RUB - Китайский юань к российскому рублю</option>
+	<option value="TRY_RUB">TRY/RUB - Турецкая лира к российскому рублю</option>
+	<option value="UAH_RUB">UAH/RUB - Украинская гривна к российскому рублю</option>
+	<option value="INR_RUB">INR/RUB – Индийская рупия к российскому рублю</option>
+	<option value="HKD_RUB">HKD/RUB - Гонконгский доллар к российскому рублю</option>
+	<option value="USD_CAD">USD/CAD - Доллар США к канадскому доллару</option>
+	<option value="USD_CHF">USD/CHF - Доллар США к швейцарскому франку</option>
+	<option value="USD_JPY">USD/JPY - Доллар США к японской йене</option>
+	<option value="USD_CNY">USD/CNY - Доллар США к китайскому юаню</option>
+	<option value="USD_TRY">USD/TRY - Доллар США к турецкой лире</option>
+	<option value="USD_UAH">USD/UAH - Доллар США к украинской гривне</option>
+	<option value="USD_INR">USD/INR - Доллар США к индийской рупии</option>
+	<option value="USD_HKD">USD/HKD - Доллар США к гонконгскому доллару</option>
+</select>
+        </div>
+        <div class="col-md-11"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-36 margin-tb-10">
+          <span id="ctl00_PageContent_tbxCurrentRate"><b>Текущее значение:  63,8848</b> на 11:52:10 12.10.2022</span></div>
+      </div>
+
+      
+
+				<div class='row'>
+					<div class='col-md-10'></div>
+					<div class='col-md-38'>
+						<div class='row'>
+							<div class='col-md-5 margin-t-15 long-date'>Значения с</div>
+							<div class='col-md-13 margin-tb-10 long-date'><table border='0' cellpadding='0' cellspacing='0'><input type='hidden' name='d1' id='d1' value='20220912'><input type='hidden' name='d1mindate' value='20091102'><input type='hidden' name='d1maxdate' value=''><tr><td nowrap><select id='d1day' name='d1day'><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12' selected>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select></td><td nowrap><select id='d1month' name='d1month' onChange='set_day_of_month(d1day.options,d1year.value,d1month.value);'><option value='1'>Января</option><option value='2'>Февраля</option><option value='3'>Марта</option><option value='4'>Апреля</option><option value='5'>Мая</option><option value='6'>Июня</option><option value='7'>Июля</option><option value='8'>Августа</option><option value='9' selected>Сентября</option><option value='10'>Октября</option><option value='11'>Ноября</option><option value='12'>Декабря</option></select></td><td nowrap><select id='d1year' name='d1year' onChange='set_day_of_month(d1day.options,d1year.value,d1month.value);'><option value='2009'>2009</option><option value='2010'>2010</option><option value='2011'>2011</option><option value='2012'>2012</option><option value='2013'>2013</option><option value='2014'>2014</option><option value='2015'>2015</option><option value='2016'>2016</option><option value='2017'>2017</option><option value='2018'>2018</option><option value='2019'>2019</option><option value='2020'>2020</option><option value='2021'>2021</option><option value='2022' selected>2022</option></select></td></tr></table></div>
+							<div class='col-md-1 margin-t-15 margin-tcr-15 long-date mlcr'>по</div>
+							<div class='col-md-13 margin-tb-10 long-date'><table border='0' cellpadding='0' cellspacing='0'><input type='hidden' name='d2' id='d2' value='20221012'><input type='hidden' name='d2mindate' value='20091102'><input type='hidden' name='d2maxdate' value=''><tr><td nowrap><select id='d2day' name='d2day'><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12' selected>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select></td><td nowrap><select id='d2month' name='d2month' onChange='set_day_of_month(d2day.options,d2year.value,d2month.value);'><option value='1'>Января</option><option value='2'>Февраля</option><option value='3'>Марта</option><option value='4'>Апреля</option><option value='5'>Мая</option><option value='6'>Июня</option><option value='7'>Июля</option><option value='8'>Августа</option><option value='9'>Сентября</option><option value='10' selected>Октября</option><option value='11'>Ноября</option><option value='12'>Декабря</option></select></td><td nowrap><select id='d2year' name='d2year' onChange='set_day_of_month(d2day.options,d2year.value,d2month.value);'><option value='2009'>2009</option><option value='2010'>2010</option><option value='2011'>2011</option><option value='2012'>2012</option><option value='2013'>2013</option><option value='2014'>2014</option><option value='2015'>2015</option><option value='2016'>2016</option><option value='2017'>2017</option><option value='2018'>2018</option><option value='2019'>2019</option><option value='2020'>2020</option><option value='2021'>2021</option><option value='2022' selected>2022</option></select></td></tr></table></div>
+							<div class='col-md-5 margin-t-12 long-date'><input type='submit' class='button80 buttonFF' name='bSubmit' value='Показать'></div>
+						</div>
+					</div>
+				</div>
+
+				<input type=hidden name=pge value='1'>
+
+                <div class='margin-tb-10'>
+					<div class='row'>
+						<div class='col-md-48 text-center' style='font-weight:bold;'>
+					Данные с 12.09.2022 по 12.10.2022</div>
+					</div>
+					<div class='row'>
+						<div class='col-md-48 text-center margin-tb-10'>
+							<a href='/export/derivatives/currency-rate.aspx?language=ru&currency=USD/RUB&moment_start=2022-09-12&moment_end=2022-10-12'>Получить данные в XML</a>
+						</div>
+					</div>
+				
+					<div class='table-scroller text-center'>
+						<table class=tablels style='margin:0 auto' cellspacing=1 cellpadding=4 border=0>
+						<tr>
+							<th rowspan='2' style='text-align:center;'>Дата</th>
+							<th colspan='2' nowrap='nowrap' style='text-align:center;'>Курс промежуточного клиринга</th>
+							<th colspan='2' nowrap='nowrap' style='text-align:center;'>Курс основного клиринга</th>
+						</tr>
+						<tr>
+							<th nowrap='nowrap' style='text-align:center;'>Значение</th>
+							<th nowrap='nowrap' style='text-align:center;'>Время</th>
+							<th nowrap='nowrap' style='text-align:center;'>Значение</th>
+							<th nowrap='nowrap' style='text-align:center;'>Время</th>
+						</tr>
+						
+				<tr class=tr1 align=right>
+					<td>11.10.2022</td>
+					<td align='center'>63,8689</td><td align='center'>13:45</td>
+					<td align='center'>63,6678</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>10.10.2022</td>
+					<td align='center'>62,0772</td><td align='center'>13:45</td>
+					<td align='center'>62,6787</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>07.10.2022</td>
+					<td align='center'>61,0618</td><td align='center'>13:45</td>
+					<td align='center'>60,99</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>06.10.2022</td>
+					<td align='center'>60,4655</td><td align='center'>13:45</td>
+					<td align='center'>60,9483</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>05.10.2022</td>
+					<td align='center'>59,6263</td><td align='center'>13:45</td>
+					<td align='center'>60,2106</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>04.10.2022</td>
+					<td align='center'>58,8913</td><td align='center'>13:45</td>
+					<td align='center'>58,6468</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>03.10.2022</td>
+					<td align='center'>57,3813</td><td align='center'>13:45</td>
+					<td align='center'>58,9363</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>30.09.2022</td>
+					<td align='center'>54,4379</td><td align='center'>13:45</td>
+					<td align='center'>58,4073</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>29.09.2022</td>
+					<td align='center'>57,2245</td><td align='center'>13:45</td>
+					<td align='center'>57,4154</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>28.09.2022</td>
+					<td align='center'>58,2525</td><td align='center'>13:45</td>
+					<td align='center'>57,544</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>27.09.2022</td>
+					<td align='center'>58,0738</td><td align='center'>13:45</td>
+					<td align='center'>58,4262</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>26.09.2022</td>
+					<td align='center'>57,8626</td><td align='center'>13:45</td>
+					<td align='center'>58,3686</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>23.09.2022</td>
+					<td align='center'>57,6945</td><td align='center'>13:45</td>
+					<td align='center'>57,6668</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>22.09.2022</td>
+					<td align='center'>59,6549</td><td align='center'>13:45</td>
+					<td align='center'>58,7504</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>21.09.2022</td>
+					<td align='center'>60,6093</td><td align='center'>13:45</td>
+					<td align='center'>60,6537</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>20.09.2022</td>
+					<td align='center'>59,9951</td><td align='center'>13:45</td>
+					<td align='center'>60,4819</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>19.09.2022</td>
+					<td align='center'>60,0528</td><td align='center'>13:45</td>
+					<td align='center'>60,1648</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>16.09.2022</td>
+					<td align='center'>60,0055</td><td align='center'>13:45</td>
+					<td align='center'>60,1653</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>15.09.2022</td>
+					<td align='center'>59,6848</td><td align='center'>13:45</td>
+					<td align='center'>59,8572</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>14.09.2022</td>
+					<td align='center'>59,7424</td><td align='center'>13:45</td>
+					<td align='center'>59,7724</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr1 align=right>
+					<td>13.09.2022</td>
+					<td align='center'>60,01</td><td align='center'>13:45</td>
+					<td align='center'>60,0097</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+				<tr class=tr0 align=right>
+					<td>12.09.2022</td>
+					<td align='center'>60,3441</td><td align='center'>13:45</td>
+					<td align='center'>60,247</td>
+					<td align='center'>18:49</td>
+				</tr>
+				
+						</table>
+					</div>
+				</div>
+                
+    </form>
+  </div>
+
+                                        <span id="ctl00_PageBottomTextAddition">
+                            <div class='blocks-list__item'>
+                              <div class='text-block'>
+                                <div class='text-block__description text-muted'>
+                                  <p>
+                                    Уважаемые посетители сайта, чтобы отправить свое предложение или
+                                    задать вопрос, используйте <a href='/ru/feedback.aspx'>форму обратной связи</a>.
+                                  </p>
+                                  <p>
+                                    Мы ценим Ваше мнение и обязательно рассмотрим Ваши вопросы и в случаях,
+                                    когда это возможно, подтвердим получение Письма и предоставим письменный ответ.
+                                  </p>
+                                  <p>
+                                    В случае наличия обоснованных и существенных претензий, Биржа совместно с Экспертными
+                                    Советами примет меры по разработке и реализации соответствующих изменений.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            </span>
+                                        
+                                        <script src="/js/jquery.cookie.js?v=20220913180126305" type="text/javascript"></script>
+
+<style>
+    .modal-dialog._disclaimer {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+</style>
+
+<script>
+    var language = "ru"
+
+    $(function () {
+       if (typeof ($.cookie('disclaimerAgreementCookie')) != "undefined") return;
+
+        $('#disclaimer-modal').load("/msn/ru-UserDisclaimer #content_disclaimer")
+
+        if (language == 'EN') {
+          $('.disclaimer__buttons a').eq(0).text('I Agree')
+          $('.disclaimer__buttons a').eq(1).text('I Do Not Agree')
+        }
+
+        $('body').on('click', '.disclaimer__buttons a', function () {
+            if ($(this).attr('data-dismiss') == 'modal') {
+                $('#disclaimer-modal').fadeOut()
+                $.cookie('disclaimerAgreementCookie', 1, { expires: 365, path: '/' })
+            }
+        })
+
+        $('#disclaimer-modal').show()
+    })
+</script>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        
+
+                        
+                        
+
+                        
+                        
+                    </div>
+                    
+                        <!-- bIsBottomTextAddition -->
+                        <div class="row blocks-list">
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+            
+            
+
+<div class="moex-design moex-design_footer">
+    <footer class="footer d-flex">
+        <div class="container">
+            <div class="footer-animation-elements-container">
+                <div class="animation-element"></div>
+                <div class="animation-element"></div>
+                <div class="animation-element"></div>
+                <div class="animation-element"></div>
+                <div class="animation-element d-sm-none"></div>
+                <div class="animation-element d-sm-none"></div>
+                <div class="animation-element d-sm-none"></div>
+                <div class="animation-element d-sm-none"></div>
+            </div>
+            <div class="footer__logo-block col-sm-12">
+                <svg class="logo-lg">
+                    <use href="/assets/icons.svg#moex-logo-footer"></use>
+                </svg>
+                <svg class="logo-sm">
+                    <use href="/assets/icons.svg#moex-logo-footer-sm"></use>
+                </svg>
+            </div>
+            <div class="footer__links-block col-sm-12">
+    <ul class="links-list">
+        <li><a href="/s10">О Московской бирже</a></li>
+        <li><a href="/ru/exchange/investors.aspx">Акционерам</a></li>
+        <li><a href="/ru/news/">Пресс-центр</a></li>
+        <li><a href="/ru/events/">Мероприятия</a></li>
+        <li><a href="/s31">Контактная информация</a></li>
+        <li><a href="https://career.moex.com" target="_blank">Карьера</a></li>
+    </ul>
+</div>
+<div class="footer__links-block col-sm-12">
+    <ul class="links-list">
+        <li><a href="/ru/news/">Объявления</a></li>
+        <li><a href="/s535">Инсайдерская информация</a></li>
+        <li><a href="/s3063">Мошеннические действия</a></li>
+        <li><a href="https://www.e-disclosure.ru/portal/company.aspx?id=43">Раскрытие информации</a></li>
+        <li><a href="https://fs.moex.com/f/3499/agreement.pdf" target="_blank">Пользовательское соглашение</a></li>
+    </ul>
+</div>
+            <div class="footer__links-block col-sm-12">
+                <ul class="social-links-list">
+    <li>
+        <a href="https://t.me/MoscowExchangeOfficial" target="_blank">
+            <svg class="logo-lg"><use href="/assets/icons.svg#telegram-logo"></use></svg>
+            <svg class="logo-sm"><use href="/assets/icons.svg#telegram-logo-sm"></use></svg>
+        </a>
+    </li>
+    <li>
+        <a href="https://vk.com/moscow_exchange" target="_blank">
+            <svg class="logo-lg"><use href="/assets/icons.svg#vk-logo"></use></svg>
+            <svg class="logo-sm"><use href="/assets/icons.svg#vk-logo-sm"></use></svg>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/user/RTSexchange" target="_blank">
+            <svg class="logo-lg"><use href="/assets/icons.svg#youtube-logo"></use></svg>
+            <svg class="logo-sm"><use href="/assets/icons.svg#youtube-logo-sm"></use></svg>
+        </a>
+    </li>
+    <li>
+        <a href="https://zen.yandex.ru/moex" target="_blank">
+            <svg class="logo-lg"><use href="/assets/icons.svg#zen"></use></svg>
+            <svg class="logo-sm"><use href="/assets/icons.svg#zen-sm"></use></svg>
+        </a>
+    </li>
+    <li>
+        <a href="https://habr.com/company/moex/blog/" target="_blank">
+            <svg class="logo-lg"><use href="/assets/icons.svg#habr"></use></svg>
+            <svg class="logo-sm"><use href="/assets/icons.svg#habr-sm"></use></svg>
+        </a>
+    </li>
+</ul>
+                <ul class="links-list phones-list">
+                    <li><a href="tel:+74953633232">+7 (495) 363-3232</a></li>
+                    <li><a href="tel:+74952323363">+7 (495) 232-3363</a></li>
+                </ul>
+                <ul class="links-list copyright">
+                    <li class="bottom-placed__padding">&copy; Московская Биржа 2011&nbsp;&mdash;&nbsp;2022</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+        
+    </div>
+
+    
+    <div id="opaco" class="hidden"></div>
+    <div id="popup" class="hidden"></div>
+    
+
+    <script>
+        var options = {
+            resizable: false,
+            draggable: false,
+            position: 'center',
+            closeOnEscape: false,
+            width: 700,
+            modal: true
+        };
+
+        $(document).ready(function () {
+            $('#disclaimerLinkRu, #disclaimerLinkEn').click(function () {
+                $('#dialog-disclaimer').dialog(options).dialog('open');
+                return false;
+            });
+        });
+    </script>
+
+    <div id="dialog-disclaimer" class="hide" title='Пользовательское соглашение'>
+        <p>
+            <iframe src="/static-content/disclaimers/disclaimerru.html" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" width="680" height="400"></iframe>
+        </p>
+    </div>
+    <script>
+        funcSetSearchALp('a', 1);
+    </script>
+
+    
+
+    <div id="new-search-reference" class="modal fade" data-lang-id="1">
+        <div class="modal-dialog md-new-search">
+            <div class="modal-content">
+                <div class="modal-body"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="moex-loader">
+        <div>
+            <svg viewBox="25 25 50 50"><circle cx="50" cy="50" r="20" fill="none"></circle></svg>
+        </div>
+    </div>
+
+    <style>
+      #moex-loader {
+        display: none;
+        position: absolute;
+        z-index: 2000;
+        background-color: #fff;
+        /* background-color: rgba(172, 169, 169, 0.9); */
+        margin: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: opacity .3s;
+      }
+      #moex-loader > div {
+        top: 50%;
+        margin-top: -21px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+      }
+      #moex-loader > div > svg {
+        height: 42px;
+        width: 42px;
+        animation: loading-rotate 2s linear infinite;
+      }
+      #moex-loader > div > svg > circle {
+        animation: loading-dash 1.5s ease-in-out infinite;
+        stroke-dasharray: 90,150;
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+        stroke: #c71c2c;
+        stroke-linecap: round;
+      }
+      @keyframes loading-rotate {
+        to {
+          transform: rotate(1turn)
+        }
+      }
+      @keyframes loading-dash {
+        0% {
+          stroke-dasharray: 1,200;
+          stroke-dashoffset: 0
+        }
+
+        50% {
+          stroke-dasharray: 90,150;
+          stroke-dashoffset: -40px
+        }
+
+        to {
+          stroke-dasharray: 90,150;
+          stroke-dashoffset: -120px
+        }
+      }
+    </style>
+
+    <script>
+        window.moexStateLoaded = function (isLoading) {
+            if (!isLoading) return
+            if (isLoading === 'loading') {
+                document.getElementById('moex-loader').style.display = 'block';
+            } else {
+                document.getElementById('moex-loader').style.display = 'none';
+            }
+        };
+    </script>
+
+    
+
+<style>
+    .outlook-material.admin-edit {
+        border: 1px dotted #848484;
+    }
+
+    a:target.can-highlight + div {
+        border: 1px solid #d4d4d4;
+        background-color: #eeebec;
+    }
+</style>
+
+<div class="outlook-material ">
+    <div class="outlook-material-header">
+        
+    </div>
+
+    <div class="outlook-material-body">
+        <div class='text-block'><script src="/ru/stat/js/BrowserRequirementsCheck/browserRequirementsCheck.js" type="text/javascript"></script>
+<link href="/ru/stat/css/master.css" rel="stylesheet" type="text/css">
+<!--script src="/ru/stat/js/open_place_moex_account.js" type="text/javascript"></script-->
+
+<script type="text/javascript">
+if ($("#ctl00_frmLeftMenuWrap .new-moex-sidebar-menu__header a.new-moex-sidebar-menu__heading-button").attr("href") === '/ru/markets/money/') {
+    $(function () {
+        // ищем пункт меню "Полезные страницы" из кода Master.master, удаляем
+        var doc = $(".new-moex-sidebar-menu__body");
+        var atr = doc[0].getElementsByTagName("div");
+        for (i = 0; i < atr.length; i++) {
+            var status = atr[i].getAttribute("style");
+            if (status != null && atr[i].textContent === 'Полезные страницы:') {
+                atr[i].remove();
+            }
+        };
+        // ищем пункт меню "rusfar"
+        if ($(".new-moex-sidebar-menu__body a[href='/msn/ru-rusfar']").length === 1)
+            setStyle($("<div>Полезные страницы:</div>").insertBefore($(".new-moex-sidebar-menu__body a[href='/msn/ru-rusfar']")));
+        else
+            setStyle($("<div>Полезные страницы:</div>").insertAfter($(".new-moex-sidebar-menu__body a:nth-child(7)")));
+
+        function setStyle(el) {
+            el.css('text-align', 'center')
+                .css('color', '#9c9c9c')
+                .css('font-weight', 'normal')
+                .css('width', '90%')
+                .css('border-top', '1px outset #d8d8d8')
+                .css('padding', '10px 0 8px')
+                .css('margin', '5px auto 0');
+        };
+    });
+};
+</script><script>
+  $(document).ready(function(){
+    if (window.location.pathname.toLowerCase() === '/ru/investor/'){
+      var btn = $('body > div.page > div.page__main > div > div > div:nth-child(1) > div.col-lg-14.blocks-list__item._layout > div > div:nth-child(2) > button');
+      if (btn.length > 0){
+        btn.attr('onclick', "location.href = 'https://lk-place.moex.com/open?utm_source=moex.com&utm_medium=referral&utm_term=open_account'");
+      }
+    }
+  });                    
+</script><link href="/ru/stat/js/indices/indexLinkToRelatedResources/place_link.css?v=20220701" rel="stylesheet">
+<script src="/ru/stat/js/indices/indexLinkToRelatedResources/place_link.js?v=202208011"></script><!--meta content="website" property="og:type" /-->
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Группа 'Московская Биржа'"/>
+<meta name="description" content="Влияем на развитие, создаем будущее. Миссия Группы — способствовать экономическому росту и реструктуризации российской экономики путем расширения возможностей по привлечению капитала для компаний и создания удобной, надежной и прозрачной инвестиционной среды для российских и иностранных инвесторов." />
+<meta name="fb:app_id" content="https://www.facebook.com/MSKExchange"/>
+<meta  property="og:image" content="https://fs.moex.com/f/11840/moex.jpg"/>
+<meta  property="og:url" content="https://www.moex.com"/>
+<link href="https://fs.moex.com/f/11840/moex.jpg" rel="image_src" />
+
+
+<script>
+
+  $(document).ready(function(){
+
+    
+
+    if (window.location.pathname.toLowerCase() === '/ru/derivatives/currency-rate.aspx')
+
+    {
+
+		var	elem = document.getElementsByName('usdratesfm')[0];
+
+      	var frm = "<div style='margin-top:20px;'>*Индикативные курсы CAD/RUB, CHF/RUB, CNY/RUB, JPY/RUB, TRU/RUB, UAH/RUB рассчитываются методом кросс-курсов с использованием Индикативного курса USD/RUB и Индикативного курса USD/валюта третьей страны</div>";
+
+      	if (elem.length > 0){
+
+          elem.insertAdjacentHTML( 'beforeEnd', frm );
+
+      }
+
+    }
+
+  });
+
+</script>
+
+<script>
+  $(document).ready(function(){
+    
+    if (window.location.pathname.toLowerCase() === '/ru/spot/members-rating.aspx')
+    {
+		document.title = "Ведущие операторы фондового рынка — Московская Биржа";
+    }
+  });
+</script><script>
+  
+	var ticker_securities_stat = [];
+    ticker_securities_stat = [
+
+      // бегущая строка, виджет "Индексы"
+      'stock:index:SNDX:IMOEX',
+      'stock:index:RTSI:RTSI',
+      'stock:index:SNDX:MOEXBMII',
+      'stock:index:RTSI:MOEXBC',
+      'stock:index:RTSI:RVI',
+
+      // бегущая строка, виджет "Валютный рынок"
+      'currency:selt:CETS:USD000UTSTOM',
+      'currency:selt:CETS:EUR_RUB__TOM',
+      'currency:selt:CETS:EURUSD000TOM',
+      'currency:selt:CETS:CNYRUB_TOM',
+      
+      // бегущая строка, виджет "Фондовый рынок"
+      'stock:shares:TQBR:MOEX',
+      'stock:shares:TQBR:SBER',
+      'stock:shares:TQBR:GAZP',
+      'stock:shares:TQBR:LKOH',
+   
+ 
+      'stock:shares:TQBR:YNDX',
+      'stock:shares:TQBR:TCSG',
+ 
+     
+    //  'stock:foreignshares:FQBR:AAPL-RM',
+    //  'stock:foreignshares:FQBR:NVDA-RM',
+    //   'stock:foreignshares:FQBR:AMD-RM',
+    //   'stock:foreignshares:FQBR:AMZN-RM',
+      
+      
+      
+      // бегущая строка, виджет "Срочный рынок" (securities) // удалить
+      'futures:forts:RFUD:RI',
+      'futures:forts:RFUD:MX',
+      'futures:forts:RFUD:MM',
+      'futures:forts:RFUD:SR',
+      'futures:forts:RFUD:GZ',
+      'futures:forts:RFUD:VB',
+      'futures:forts:RFUD:LK',
+      'futures:forts:RFUD:HO',
+      'futures:forts:RFUD:US',
+      'futures:forts:RFUD:EU',
+      'futures:forts:RFUD:CN',
+      
+      // бегущая строка, виджет "Срочный рынок" (assets)
+      'futures:forts:RTS',
+      'futures:forts:MIX',
+      'futures:forts:MXI',
+      'futures:forts:SBRF',
+      'futures:forts:GAZR',
+      'futures:forts:VTBR',
+      'futures:forts:LKOH',
+      'futures:forts:HOME',
+      'futures:forts:USDRUBTOM',
+      'futures:forts:EURRUBTOM',
+      'futures:forts:CNYRUBTOM',
+
+    ];
+
+</script><script>
+document.addEventListener("DOMContentLoaded", function() { 
+    let iframes = document.querySelectorAll('.iframeAdaptive');
+  
+    $.each(iframes,function(index, i) {
+    //iframes.forEach(function(i) { 
+        let iframeWidth = i.width; 
+        let iframeHeight = i.height; 
+        let iframeParent = i.parentNode; 
+        let parentWidth = parseInt(getComputedStyle(iframeParent)['width'])-parseInt(getComputedStyle(iframeParent)['padding-left'])-parseInt(getComputedStyle(iframeParent)['padding-right']); 
+        let iframeProportion = parentWidth / iframeWidth;
+        i.setAttribute('width', parentWidth); 
+        i.setAttribute('height', iframeHeight * iframeProportion); 
+    });
+});
+</script></div>
+    </div>
+</div>
+
+    
+    <script src="/moex-redesign/js/classlist-polyfill.prod.js?v=20221005125352305" type="text/javascript"></script>
+    <script src="/moex-redesign/js/main.prod.js?v=20221011115236305" type="text/javascript"></script>
+    
+    
+</body>
+</html>
