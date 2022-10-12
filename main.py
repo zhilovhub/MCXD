@@ -37,7 +37,7 @@ async def get_currency_binance() -> float:
         'proMerchantAds': False,
         'page': 1,
         'rows': 10,
-        'payTypes': [],
+        'payTypes': ["TinkoffNew"],
         'countries': [],
         'publisherType': None,
         'asset': 'USDT',
@@ -48,7 +48,7 @@ async def get_currency_binance() -> float:
     async with aiohttp.ClientSession() as session:
         async with session.post('https://p2p.binance.com/bapi/c2c/v2/friendly/c2c/adv/search', cookies=cookies, headers=headers, json=json_data) as response:
             file = await response.json()
-            binance_usdt = float(file["data"][0]["adv"]["price"])
+            binance_usdt = float(file["data"][4]["adv"]["price"])
     return binance_usdt
 
 
