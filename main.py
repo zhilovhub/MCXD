@@ -149,7 +149,7 @@ async def main() -> string:
            f'Binance USDT💰= {"{0:.2f}".format(binance)} \n\n ' \
            f'Грязный спред по $ = {"{0:.2f}".format(spread_usd)}% \n ' \
            f'Грязный спред по € = {"{0:.2f}".format(spread_eur)}% \n\n ' \
-           f'Закуп $ под SWIFT = {"{0:.2f}".format(moex)} \n  ' \
+           f'Закуп $ под SWIFT = {"{0:.2f}".format(moex)} \n ' \
            f'Спред SWIFT = {"{0:.2f}".format(spread_swift)}% \n\n ' \
            f'Unistream Узбекистан 🇺🇿 \n 1 RUB = {"{0:.2f}".format(unistream)}'
     return mess
