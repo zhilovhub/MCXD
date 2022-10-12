@@ -67,7 +67,6 @@ async def get_currency_unistream() -> float:
             unistream = 9000000 / unistream_rub
             unistream -= unistream * 0.008
     return unistream
-        
 
 
 async def get_currency_moex() -> float:
@@ -78,6 +77,8 @@ async def get_currency_moex() -> float:
             moex_usd = soup.find(id='ctl00_PageContent_tbxCurrentRate').text.split()[2].replace(',', '.')
             
     return float(moex_usd) + float(moex_usd) * 0.015
+
+
 async def get_currency_koronapay() -> list:
     url = "https://koronapay.com/transfers/online/api/transfers/tariffs"
 
@@ -138,19 +139,31 @@ async def main() -> string:
     # print(get_currency_garantex())
     spread_usd = (max(garantex, koronapay_usd) - min(garantex, koronapay_usd)) / (max(garantex, koronapay_usd)) * 100
     spread_eur = (max(garantex, koronapay_eur) - min(garantex, koronapay_eur)) / (max(garantex, koronapay_eur)) * 100
+    spread_swift = (garantex - 0.1 - moex) / moex * 100
 
-    mess = f'Курс короны в турцию 🇹🇷 \n Доллар 💵 = {"{0:.2f}".format(koronapay_usd)} \n Евро 💶 = {"{0:.2f}".format(koronapay_eur)} \n Лира 💷 = {"{0:.2f}".format(koronapay_try)} \n Garantex USDT 💰 = {garantex} \n Binance USDT💰= {"{0:.2f}".format(binance)} \n Грязный спред по $ = {"{0:.2f}".format(spread_usd)}% \n Грязный спред по € = {"{0:.2f}".format(spread_eur)}% \n Закуп $ под SWIFT = {"{0:.2f}".format(moex)} \n  Спред SWIFT = 1.5% \n Unistream Узбекистан 🇺🇿 \n 1 RUB = {"{0:.2f}".format(unistream)}'
+    mess = f'Курс короны в турцию 🇹🇷 \n ' \
+           f'Доллар 💵 = {"{0:.2f}".format(koronapay_usd)} \n ' \
+           f'Евро 💶 = {"{0:.2f}".format(koronapay_eur)} \n ' \
+           f'Лира 💷 = {"{0:.2f}".format(koronapay_try)} \n\n ' \
+           f'Garantex USDT 💰 = {garantex} \n ' \
+           f'Binance USDT💰= {"{0:.2f}".format(binance)} \n\n ' \
+           f'Грязный спред по $ = {"{0:.2f}".format(spread_usd)}% \n ' \
+           f'Грязный спред по € = {"{0:.2f}".format(spread_eur)}% \n\n ' \
+           f'Закуп $ под SWIFT = {"{0:.2f}".format(moex)} \n  ' \
+           f'Спред SWIFT = {"{0:.2f}".format(spread_swift)}% \n\n ' \
+           f'Unistream Узбекистан 🇺🇿 \n 1 RUB = {"{0:.2f}".format(unistream)}'
     return mess
 
 
 async def send_messages() -> None:
     with open("config.txt", "r", encoding="utf-8") as f:
         user_id = f.read().strip().split("\n")[-1].strip()
+        await main()
         await bot.send_message(user_id, await main())
 
 
 async def create_aioschedule() -> None:
-    aioschedule.every(1).seconds.do(send_messages)
+    aioschedule.every(180).seconds.do(send_messages)
 
     while True:
         await aioschedule.run_pending()
